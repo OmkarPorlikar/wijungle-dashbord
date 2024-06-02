@@ -62,6 +62,25 @@ body {
   margin: 0rem auto 1rem auto;
 
 }
+
+
+.recharts-cartesian-axis-tick text {
+  font-size: 12px;
+  fill: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recharts-wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.recharts-surface {
+  min-width: 100%;
+}
+
 @media screen and (max-width:786px) {
   .chart-container span{
     font-size: 1.4rem;
