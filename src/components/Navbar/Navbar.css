@@ -149,20 +149,29 @@ body {
   @media screen and (max-width:786px) {
     .navbar-right{
     flex-direction: column;
-    background-color: gray;
+    background-color: rgb(229, 229, 118);
+   color: #000000;
     padding: 2rem;
     position: fixed;
     top: 4rem;
     z-index: 9999;
     right: 2rem;
+    border-radius: 10px;
+
   
     }
     .toggleContainer{
       display: block;
-      background-color: var(--appColor);
       padding: 6px;
       position: fixed;
       right: 2rem;
       margin-bottom: 1rem;
   }
+  .dropdown button{
+    color: #000000;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #000000;
+}
   }
