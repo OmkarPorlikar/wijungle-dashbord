@@ -37,6 +37,7 @@ body {
  .chart-container {
   width: 100%;
   margin: 2rem 0;
+   overflow:hidden;
   
   /* From https://css.glass */
   background: rgba( 179, 244, 244, 0.05 );
@@ -75,7 +76,7 @@ body {
 
 .recharts-wrapper {
   max-width: 100%;
-  overflow-x: auto;
+  overflow: auto;
 }
 
 .recharts-surface {
