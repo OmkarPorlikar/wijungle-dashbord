@@ -44,8 +44,8 @@ const CategoryChart = ({ data }) => {
       </ResponsiveContainer>
       <p className="desc">
         The bar graph displays the distribution of events across different categories. Each bar represents a category, and its height indicates the count of events in that category. 
-        The x-axis - shows the categories, and 
-        the y-axis - represents the count of events.
+        The <strong> x-axis</strong> - shows the categories, and 
+        the <strong>y-axis</strong> - represents the count of events.
       </p>
     </div>
   );
