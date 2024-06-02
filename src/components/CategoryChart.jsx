@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart, Bar, XAxis,Cell ,YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Label } from 'recharts';
+import { BarChart, Bar, XAxis, Cell, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Label } from 'recharts';
 
 const colors = [
   '#8884d8', '#82ca9d', '#ffc658', '#ff7f50', '#87cefa', '#da70d6', '#32cd32', '#6495ed', '#ff69b4', '#ba55d3'
@@ -11,7 +11,7 @@ const CustomTooltip = ({ active, payload, label }) => {
     const percentage = ((payload[0].value / totalCount) * 100).toFixed(2);
     return (
       <div className="custom-tooltip">
-        <p >{label}</p>
+        <p>{label}</p>
         <p>{`Count: ${payload[0].value}`}</p>
         <p>{`Percentage: ${percentage}%`}</p>
       </div>
@@ -21,11 +21,9 @@ const CustomTooltip = ({ active, payload, label }) => {
 };
 
 const CategoryChart = ({ data }) => {
-  console.log(data ,"data from category")
   return (
-    <div className="chart-container" id='c-chart'> 
-          <span>Alerts by Category</span>
-
+    <div className="chart-container" id="c-chart">
+      <h2>Alerts by Category</h2>
       <ResponsiveContainer width="100%" height={500}>
         <BarChart data={data} margin={{ top: 5, right: 30, left: 20, bottom: 60 }}>
           <CartesianGrid strokeDasharray="3 3" />
@@ -43,15 +41,14 @@ const CategoryChart = ({ data }) => {
             ))}
           </Bar>
         </BarChart>
- 
       </ResponsiveContainer>
-      <p className='desc'>
-      The bar graph displays the distribution of events across different categories. Each bar represents a category, and its height indicates the count of events in that category. 
-      The x-axis - shows the categories, and 
-      the y-axis - represents the count of events.
+      <p className="desc">
+        The bar graph displays the distribution of events across different categories. Each bar represents a category, and its height indicates the count of events in that category. 
+        The x-axis - shows the categories, and 
+        the y-axis - represents the count of events.
       </p>
-      </div>
+    </div>
   );
+};
 
-}
 export default CategoryChart;
