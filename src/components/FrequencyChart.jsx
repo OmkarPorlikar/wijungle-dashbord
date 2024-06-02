@@ -35,8 +35,8 @@ const FrequencyChart = ({ data }) => {
       </ResponsiveContainer>
       <p className="desc">
       The line graph represents the frequency of events over time.
-      The x-axis - typically represents timestamps,
-       and the y-axis - represents the number of occurrences of events at each timestamp.
+      The <strong>x-axis</strong> - typically represents timestamps,
+       and the <strong>y-axis</strong> - represents the number of occurrences of events at each timestamp.
       </p>
     </div>
   );
