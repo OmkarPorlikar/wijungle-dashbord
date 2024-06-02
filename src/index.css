@@ -64,6 +64,7 @@ body {
 }
 
 
+
 .recharts-cartesian-axis-tick text {
   font-size: 12px;
   fill: #333;
@@ -86,6 +87,8 @@ body {
     font-size: 1.4rem;
     padding: 1.8rem 0;
   }
-  
+  .main-container{
+    padding: 1.2rem;
+  }
 }
 
