@@ -76,7 +76,7 @@ body {
 
 .recharts-wrapper {
   max-width: 100%;
-  overflow: auto;
+  overflow:hidden;
 }
 
 .recharts-surface {
