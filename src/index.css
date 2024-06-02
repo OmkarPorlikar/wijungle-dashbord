@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  padding: 20px;
+}
+.main-container{
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  padding: 3rem;
+  /* overflow: hidden; */
+}
+
+.custom-tooltip {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.proto-tooltip{
+  background-color: #fff;
+  padding: 8px;
+  border: 1px solid #8884d8;
+  border-radius: 12px;
+}
+
+ .chart-container {
+  width: 100%;
+  margin: 2rem 0;
+  
+  /* From https://css.glass */
+  background: rgba( 179, 244, 244, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4.5px );
+  -webkit-backdrop-filter: blur( 4.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 5px 15px #8477cc59;
+}
+.chart-container span{
+  display: block;
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.desc{
+  font-size: 14px;
+  width: 80%;
+  margin: 0rem auto 1rem auto;
+
+}
+@media screen and (max-width:786px) {
+  .chart-container span{
+    font-size: 1.4rem;
+    padding: 1.8rem 0;
+  }
+}
+
