@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import { FaSun, FaMoon, FaHome } from 'react-icons/fa';
+import { FaSun, FaMoon, FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -35,7 +35,9 @@ const Navbar = () => {
       
       
       <div  className='toggleContainer' onClick={handleToggle}>
-  <img src='bars.png' alt="" className="toggleButton" />
+      <button onClick={toggleDropdown} className="dropbtn">
+            {!dropdownOpen ? <FaTimes /> : <FaBars />}
+          </button>
 </div>  
       <div className={`navbar-right ${toggleBars ? 'hidden ' : ''}`}>
 
