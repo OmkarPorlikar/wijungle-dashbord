@@ -81,6 +81,9 @@ body {
 .recharts-surface {
   min-width: 100%;
 }
+.category p{
+margin-top: -5rem;
+}
 
 @media screen and (max-width:786px) {
   .chart-container span{
