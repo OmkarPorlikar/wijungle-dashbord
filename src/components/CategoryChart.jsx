@@ -23,7 +23,7 @@ const CustomTooltip = ({ active, payload, label }) => {
 const CategoryChart = ({ data }) => {
   return (
     <div className="chart-container" id="c-chart">
-      <h2>Alerts by Category</h2>
+            <span>Alerts by Category</span>
       <ResponsiveContainer width="100%" height={500}>
         <BarChart data={data} margin={{ top: 5, right: 30, left: 20, bottom: 60 }}>
           <CartesianGrid strokeDasharray="3 3" />
