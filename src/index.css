@@ -83,6 +83,8 @@ body {
 }
 .category p{
 margin-top: -5rem;
+  background-color: red;
+
 }
 
 @media screen and (max-width:786px) {
