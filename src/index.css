@@ -39,7 +39,6 @@ body {
   margin: 2rem 0;
    overflow:hidden;
   
-  /* From https://css.glass */
   background: rgba( 179, 244, 244, 0.05 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 4.5px );
@@ -68,7 +67,7 @@ body {
 
 .recharts-cartesian-axis-tick text {
   font-size: 12px;
-  fill: #333;
+/*   fill: #333; */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
